@@ -2,49 +2,123 @@
   "publications": [
     {
       "id": "1",
-      "href": "",
-      "year": "2022",
-      "abstract": [],
-      "keywords": [],
-      "citation": "Doe, J., Smith, J. Deep Learning for Genomic Data Analysis.",
-      "bold_name": "Doe, J.",
-      "status": "In Progress"
+      "href": "https://arxiv.org/abs/2606.14129",
+      "year": "2026",
+      "image": "/images/borad.webp",
+      "abstract": [
+        "Reconstruction-based anomaly detection is attractive for industrial inspection, but scaling it from category-specific training to a one-for-all setting is challenging. A single model must reconstruct diverse normal appearances without copying abnormal details, which exposes two coupled failure modes: identical shortcut, where anomalies pass through the reconstruction path, and mis-reconstruction, where normal categories are confused with one another. We propose **BoRAD**, a label-free training framework that treats this as a representation-capacity allocation problem. BoRAD uses a shared learnable prototype bank to impose two complementary regularizers: spatial prototype alignment contracts local within-prototype variation to suppress anomaly copying, while prototype-relative global alignment preserves between-prototype structure and improves sensitivity to abnormal angular deviations. The prototype bank and prediction heads are used only during training; inference remains a standard teacher-student feature discrepancy pass, with no class labels, negative pairs, memory retrieval, or prototype lookup. BoRAD achieves competitive one-for-all anomaly detection performance, including 86.2% mAD on MVTec AD, 80.7% mAD on VisA and 73.1% mAD on Real-IAD. Diagnostic analyses further show reduced anomaly leakage, improved normal-category separability, and stronger anomaly-normal score separation."
+      ],
+      "keywords": [
+        "Anomaly Detection",
+        "One-for-all",
+        "Representation Learning",
+        "Prototype",
+        "Unsupervised Learning"
+      ],
+      "citation": "Duy Hoang Khuong, Tri Nguyen Minh, Ngu Huynh Cong Viet. BoRAD: Bootstrap your Own Representations for Multi-class Anomaly Detection. arXiv.",
+      "bold_name": "Duy Hoang Khuong",
+      "status": "Preprint"
     },
     {
       "id": "2",
-      "href": "https://www.example.com",
-      "year": "2021",
+      "href": "#",
+      "year": "2026",
+      "image": "/images/statistical.webp",
       "abstract": [
-        "Machine learning has revolutionized the field of drug discovery by enabling the rapid identification of novel therapeutic compounds. In this article, we provide an overview of the latest machine learning techniques used in drug discovery and discuss their potential applications in precision medicine. We also highlight key challenges and future directions for research in this exciting field.",
-        "Also to be noted, this is the second paragraph of the abstract."
+        "Reconstruction-based methods are a cornerstone of unsupervised image anomaly detection, but they remain vulnerable to outlier leakage, where standard mean squared error (MSE) loss drives the model to faithfully reconstruct anomalous patterns. We propose a Non-linear Reconstruction Loss that applies a sigmoid-based squashing function to suppress high-magnitude features, preventing outliers from dominating optimization while preserving sensitivity to normal patterns. In addition, we introduce a statistical calibration scheme that selects the scaling factor $k$ from the confidence interval (CI) of the normal feature distribution, enabling data-driven control of the suppression strength. Our approach achieves competitive or superior anomaly detection performance compared to state-of-the-art methods, reaching 99.0% Image-AUROC and 97.3% Pixel-AUROC on MVTec-AD, and 95.3% Image-AUROC and 99.0% Pixel-AUROC on VisA. These results indicate that non-linear gradient suppression is an effective mechanism for mitigating outlier leakage and improving anomaly localization in unified industrial inspection settings."
       ],
       "keywords": [
-        "Deep Learning",
-        "Genomics",
-        "Machine Learning",
-        "Bioinformatics"
+        "Anomaly Detection",
+        "Outlier Leakage",
+        "Reconstruction-based",
+        "Non-linear Loss",
+        "Unsupervised Learning",
+        "MVTec-AD",
+        "VisA"
       ],
-      "citation": "Doe, J., Smith, J. (2021). Machine Learning for Drug Discovery. Science, 345, 678-689. https://doi.org/10.1126/science.12345",
-      "bold_name": "Doe, J.",
-      "status": "Under Review"
+      "citation": "Tri Nguyen Minh*, Duy Hoang Khuong*, Ngu Huynh. Statistical Non-linear Reconstruction Loss for Image Anomaly Detection. KES 2026.",
+      "bold_name": "Duy Hoang Khuong*",
+      "status": "Accepted"
     },
     {
       "id": "3",
-      "href": "https://www.example.com",
-      "year": "2020",
+      "href": "https://arxiv.org/pdf/2605.02328",
+      "year": "2025",
+      "image": "/images/cbam.webp",
       "abstract": [
-        "Computational biology has emerged as a powerful tool for advancing precision medicine, enabling researchers to analyze complex biological data with unprecedented accuracy. In this review, we discuss the latest computational biology techniques and their applications in personalized medicine. We also highlight key challenges and opportunities in the field and provide insights into future directions for research.",
-        "Also to be noted, this is the second paragraph of the abstract."
+        "Chest radiography is a widely used imaging modality for thoracic disease diagnosis, yet its conventional interpretation remains time-consuming and heavily dependent on expert knowledge. While deep learning has improved diagnostic efficiency through automated feature extraction, challenges such as class imbalance and the localization of multiple co-existing pathologies remain unsolved. In this paper, inspired by the strength of Convolutional Block Attention Module (CBAM) in feature refinement and the capability of CNN blocks in feature extraction, we propose a strategy to integrate CBAM into traditional CNN blocks to enhance performance in multi-label classification tasks. Our method achieves a mean AUC of 0.8695 on ChestXray14 dataset, outperforming several state-of-the-art baselines."
       ],
       "keywords": [
-        "Deep Learning",
-        "Genomics",
-        "Machine Learning",
-        "Bioinformatics"
+        "Deep learning",
+        "Attention-Wise Blocks",
+        "Multi-label classification",
+        "Chest X-ray",
+        "Class imbalance in Medical Imaging"
       ],
-      "citation": "Smith, J, Doe, J. (2020). Computational Biology for Precision Medicine. Cell, 12, 123-135. https://doi.org/10.1016/j.cell.12345",
-      "bold_name": "Doe, J.",
+      "citation": "Nguyen Huu Duy, Duy Hoang Khuong, Ngu Huynh Cong Viet. Improving Imbalanced Multi-Label Chest X-Ray Diagnosis via CBAM-Enhanced CNN Backbones. FETC 2025.",
+      "bold_name": "Duy Hoang Khuong",
       "status": "Published"
+    },
+    {
+      "id": "4",
+      "href": "https://ieeexplore.ieee.org/abstract/document/11231258/",
+      "year": "2025",
+      "image": "/images/memory.webp",
+      "abstract": [
+        "Chest X-ray analysis using deep learning has shown promise in automated diagnosis, yet performance is hindered by class imbalance and limited data for rare diseases. We propose a memory-augmented deep learning framework for multi-label chest X-ray classification that addresses these challenges by integrating a memory bank module to store and retrieve reliable pathological features. This mechanism enhances representation learning by filtering out uncertain outlier features and retaining stable pathological patterns, leading to improved classification accuracy. Evaluated on the ChestX-ray14 dataset, our model outperforms state-of-the-art baselines, achieving higher AUC scores across multiple disease categories. Feature visualization via PCA and t-SNE reveals more distinct and compact clusters for pathological classes, highlighting the effectiveness of memory-enhanced learning in mitigating long-tailed distribution effects."
+      ],
+      "keywords": [
+        "Memory-augmented neural networks",
+        "chest X-ray",
+        "class imbalance",
+        "deep learning",
+        "medical imaging",
+        "feature augmentation."
+      ],
+      "citation": "Duy Hoang Khuong, et al. Mitigating Class Imbalance in Chest X-Ray Classification With Memory-Augmented Models. ISCIT 2026.",
+      "bold_name": "Duy Hoang Khuong",
+      "status": "Published"
+    },
+    {
+      "id": "5",
+      "href": "https://arxiv.org/pdf/2605.02292",
+      "year": "2025",
+      "image": "/images/momentum.webp",
+      "abstract": [
+        "Chest X-ray classification suffers from severe class imbalance where gradient updates bias toward majority classes, causing feature drift and poor performance on rare but critical pathologies. We propose a Momentum-Anchored Multi-Scale Fusion Network that uses exponential moving averages (EMA) as a temporal anchoring mechanism to stabilize feature representations under long-tailed distributions. Our approach applies selective momentum updates to the final expansion block of an EfficientNet backbone, creating a slowly-evolving reference branch that resists gradient-induced drift while preserving discriminative patterns for minority classes. Combined with multi-scale spatial fusion (1×1, 3×3, 5×5 convolutions), this anchoring strategy maintains representational stability throughout training. On ChestX-ray14, our method achieves 0.8682 average AUC, outperforming state-of-the-art approaches and showing particular improvements on rare pathologies like Hernia (0.9470) and Pneumonia (0.8165). The results demonstrate that momentum anchoring effectively counters feature instability in long-tailed medical image classification."
+      ],
+      "keywords": [
+        "Memory-augmented neural networks",
+        "chest X-ray",
+        "class imbalance",
+        "deep learning",
+        "medical imaging"
+      ],
+      "citation": "Duy Hoang Khuong, et al. Momentum-Anchored Multi-Scale Fusion for Long-Tailed Chest X-Ray Classification. FETC 2025 (Best Paper Award).",
+      "bold_name": "Duy Hoang Khuong",
+      "status": "Published"
+    },
+    {
+      "id": "6",
+      "href": "#",
+      "year": "2026",
+      "image": "/images/device.webp",
+      "abstract": [],
+      "keywords": [],
+      "citation": "Nguyen Tran Khanh, Duy Hoang Khuong, Ngu Huynh Cong Viet. Device-Invariant Chest X-ray Classification via Attention and Adversarial Learning.",
+      "bold_name": "Duy Hoang Khuong",
+      "status": "Under Review"
+    },
+    {
+      "id": "7",
+      "href": "#",
+      "year": "2026",
+      "image": "/images/dumenet.webp",
+      "abstract": [],
+      "keywords": [],
+      "citation": "Tri Nguyen Minh*, Duy Hoang Khuong*, Ngu Huynh Cong Viet. Dual-Memory Based Reconstruction Method for Image Anomaly Detection.",
+      "bold_name": "Duy Hoang Khuong*",
+      "status": "Under Review"
     }
   ]
 }

@@ -16,27 +16,23 @@ export default function Projects() {
     );
 }
 
-const defaultImage = '/images/default_project.jpeg';
+
 
 function ProjectCard({project}) {
-    const {id, title, description, image, href} = project;
-    const imageUrl = image || defaultImage;
+    const {id, title, description, href} = project;
 
     const cardContent = (
         <>
-            <div className="relative w-full h-48">
-                <Image
-                    src={imageUrl}
-                    alt={title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    style={{ objectFit: 'cover' }}
-                    className="rounded-t-lg"
-                    priority={true}
-                />
-            </div>
+
             <div className="p-4 flex flex-col justify-between flex-1">
-                <h2 className="text-xl font-semibold mb-2">{title}</h2>
+                <div className="flex items-center mb-2">
+                    <h2 className="text-xl font-semibold mr-3">{title}</h2>
+                    {project.status && (
+                        <span className={`text-xs font-medium px-2.5 py-0.5 rounded border ${project.status === 'Completed' ? 'bg-green-100 text-green-800 border-green-200' : 'bg-blue-100 text-blue-800 border-blue-200'}`}>
+                            {project.status}
+                        </span>
+                    )}
+                </div>
                 {description && description.length > 0 && (
                     <div className="text-gray-600 mb-4">
                         {description.map((desc, index) => (

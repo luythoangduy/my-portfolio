@@ -22,9 +22,9 @@ function Header({scrolled}) {
                 <div className="flex items-center space-x-4">
                     <nav className="hidden md:flex items-center space-x-4">
                         <NavLink title="About" href="/"/>
-                        {(experience.extracurricular.length > 0 || experience.job.length > 0 || experience.education.length > 0) && (<NavLink title="Experience" href="/experience"/>)}
+                        {experience.education.length > 0 && (<NavLink title="Education" href="/education"/>)}
+                        {(experience.extracurricular.length > 0 || experience.job.length > 0) && (<NavLink title="Experience" href="/experience"/>)}
                         {publications.publications.length > 0 && (<NavLink title="Publications" href="/publications"/>)}
-                        {research.research.length > 0 && (<NavLink title="Research" href="/research"/>)}
                         {projects.projects.length > 0 && (<NavLink title="Projects" href="/projects"/>)}
                     </nav>
                     <div className="md:hidden">
@@ -40,9 +40,9 @@ function Header({scrolled}) {
             {isOpen && (
                 <nav className="md:hidden flex flex-col items-start space-y-4 p-4">
                     <NavLink title="About" href="/"/>
-                    {(experience.extracurricular.length > 0 || experience.job.length > 0 || experience.education.length > 0) && (<NavLink title="Experience" href="/experience"/>)}
+                    {experience.education.length > 0 && (<NavLink title="Education" href="/education"/>)}
+                    {(experience.extracurricular.length > 0 || experience.job.length > 0) && (<NavLink title="Experience" href="/experience"/>)}
                     {publications.publications.length > 0 && (<NavLink title="Publications" href="/publications"/>)}
-                    {research.research.length > 0 && (<NavLink title="Research" href="/research"/>)}
                     {projects.projects.length > 0 && (<NavLink title="Projects" href="/projects"/>)}
                 </nav>
             )}

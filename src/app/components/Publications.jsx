@@ -5,13 +5,14 @@ import React from "react";
 import publications from '../../../data/publications.json';
 
 export default function Publications() {
-    const sortedPublications = publications.publications.sort((a, b) => new Date(b.year) - new Date(a.year));
+    const sortedPublications = publications.publications;
 
     return (
         <div className="w-full mb-10">
-            <div className="font-bold text-xl md:text-3xl mb-10">
+            <div className="font-bold text-xl md:text-3xl mb-4">
                 Publications
             </div>
+            <p className="italic text-gray-600 mb-6">* denotes equal contribution</p>
             {sortedPublications.map(item => (
                 <PublicationCard key={item.id} item={item}/>
             ))}
@@ -23,8 +24,14 @@ function PublicationCard({ item }) {
     const highlightedCitation = item.citation.replace(item.bold_name, `<span class="font-bold">${item.bold_name}</span>`);
 
     const cardContent = (
-        <>
-            <div className="flex items-center text-sm text-gray-500">
+        <div className="flex flex-col sm:flex-row gap-4">
+            {item.image && (
+                <div className="flex-shrink-0 w-full sm:w-32 h-24 relative rounded-md overflow-hidden bg-white border border-gray-100">
+                    <img src={item.image} alt="Thumbnail" className="w-full h-full object-contain" />
+                </div>
+            )}
+            <div className="flex-grow">
+                <div className="flex items-center text-sm text-gray-500">
                 <span>{item.year}</span>
                 {item.status && (
                     <span className={`ml-2 px-2 py-1 rounded-full text-xs font-semibold
@@ -48,7 +55,8 @@ function PublicationCard({ item }) {
                     <span className="font-medium">Keywords:</span> {item.keywords.join(', ')}
                 </div>
             )}
-        </>
+            </div>
+        </div>
     );
 
     return item.href ? (

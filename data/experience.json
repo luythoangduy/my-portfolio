@@ -1,113 +1,67 @@
 {
-  "job": [
-    {
-      "id": 1,
-      "title": "Software Engineer Intern",
-      "company": "Meta",
-      "location": "Menlo Park, CA",
-      "project_name": "",
-      "instructor": "",
-      "start_date": "06/2023",
-      "end_date": "09/2023",
-      "description": [
-        "Developed new features for the Meta app using React Native and TypeScript",
-        "Collaborated with cross-functional teams to improve app performance and user experience",
-        "Conducted code reviews and provided feedback to team members"
-      ],
-      "href": ""
-    },
-    {
-      "id": 2,
-      "title": "Research Assistant",
-      "company": "Brown University & Department of Health of Rhode Island",
-      "location": "Providence, RI",
-      "project_name": "Deep Learning for Genomics and Precision Medicine",
-      "instructor": "Prof. Jane Smith",
-      "start_date": "09/2022",
-      "end_date": "05/2023",
-      "description": [
-        "Designed and implemented deep learning models for analyzing genomic data",
-        "Published research papers in top-tier conferences and journals",
-        "Presented findings at international conferences and workshops"
-      ],
-      "href": "https://www.example.com"
-    },
-    {
-      "id": 3,
-      "title": "Research Assistant",
-      "company": "Some University",
-      "location": "City, State",
-      "project_name": "Project Name",
-      "instructor": "",
-      "start_date": "09/2012",
-      "end_date": "05/2013",
-      "description": [],
-      "href": ""
-    }
-  ],
-  "extracurricular": [
-    {
-      "id": 1,
-      "title": "Extracurricular Activity",
-      "company": "Company Name",
-      "location": "City, State",
-      "project_name": "Project Name",
-      "instructor": "",
-      "start_date": "Month Year",
-      "end_date": "Month Year",
-      "description": [
-        "Description of the activity",
-        "Description of the activity",
-        "Description of the activity"
-      ],
-      "href": ""
-    }
-  ],
   "education": [
     {
-      "id": 1,
-      "school": "Brown University",
-      "degree": "M.S. in Computational Biology",
+      "id": "1",
+      "degree": "AI Talent Training Program, Basic Track",
+      "school": "VinUniversity & Vingroup",
+      "gpa": "",
       "status": "In Progress",
-      "start_date": "09/2023",
-      "end_date": "05/2025",
-      "gpa": "3.5 / 4.0",
-      "courses": [
-        "Data Structures",
-        "Algorithms",
-        "Machine Learning",
-        "Computer Vision",
-        "Data Structures",
-        "Algorithms",
-        "Machine Learning",
-        "Computer Vision",
-        "Data Structures",
-        "Algorithms",
-        "Machine Learning",
-        "Computer Vision"
-      ],
-      "other_info": [],
-      "href": "https://www.example.com"
+      "start_date": "May 28, 2026",
+      "end_date": "Present",
+      "courses": [],
+      "other_info": [
+        "Participating in a practical AI talent training program implemented by VinUniversity in collaboration with Vingroup.",
+        "Training includes foundation modules on AI thinking, AI ethics, AI skills, and problem solving with AI assistants, followed by hands-on work on real AI projects with enterprise mentors."
+      ]
     },
     {
-      "id": 2,
-      "school": "Brown University",
-      "degree": "B.A. in Computational Biology",
-      "status": "Graduated",
-      "start_date": "09/2019",
-      "end_date": "05/2023",
-      "gpa": "3.5 / 4.0",
+      "id": "2",
+      "degree": "B.S. in Artificial Intelligence",
+      "school": "FPT University",
+      "gpa": "3.4/4.00",
+      "status": "Completed",
+      "start_date": "2023",
+      "end_date": "2026",
       "courses": [
-        "Data Structures",
-        "Algorithms",
+        "Deep Learning",
+        "Computer Vision",
         "Machine Learning",
-        "Computer Vision"
+        "Data Mining"
       ],
       "other_info": [
-        "Graduated with Honors",
-        "Dean's List"
-      ],
-      "href": ""
+        "Thesis/Capstone: CXR-DR: Chest X-ray Images Diagnosis and Report Generation. Proposed a device-invariant, long-tailed chest X-ray diagnosis framework combining specialized ensemble CNNs, attention-guided feature learning, adversarial scanner/domain debiasing, and PubMedCLIP-based input validation for rare-pathology detection and cross-dataset robustness.",
+        "Merit 70% Scholarship, FPT University"
+      ]
     }
-  ]
+  ],
+  "job": [
+    {
+      "id": "1",
+      "title": "Research Assistant",
+      "company": "AICLab, FPT University",
+      "start_date": "12/2024",
+      "end_date": "Present",
+      "location": "Ho Chi Minh City, Vietnam",
+      "description": [
+        "Working under the supervision of Dr. Huynh Cong Viet Ngu.",
+        "Conducted research on robust visual representation learning for real-world distribution shifts, with applications in medical imaging and industrial anomaly detection.",
+        "Developed novel learning pipelines for long-tailed classification, device-invariant representation learning, and reconstruction-based anomaly detection.",
+        "Contributed to problem formulation, experimental design, ablation analysis, and manuscript preparation for peer-reviewed submissions."
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Backend Intern",
+      "company": "FPT Software",
+      "start_date": "6/2024",
+      "end_date": "10/2024",
+      "location": "Ho Chi Minh City, Vietnam",
+      "description": [
+        "Worked on Carus, a web-based automotive sales management platform.",
+        "Contributed to backend service development in an industry software team, translating product requirements into maintainable APIs and data workflows.",
+        "Implemented modular backend components with attention to reliability, traceability, and collaboration in a production-oriented codebase."
+      ]
+    }
+  ],
+  "extracurricular": []
 }

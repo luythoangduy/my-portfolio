@@ -1,30 +1,46 @@
 {
   "projects": [
     {
-      "id": 1,
-      "title": "Machine Learning for Drug Discovery",
+      "id": "1",
+      "title": "BibtexScraping",
+      "status": "Completed",
       "description": [
-        "Machine learning has revolutionized the field of drug discovery by enabling the rapid identification of novel therapeutic compounds. In this project, we developed a deep learning model to predict the binding affinity of small molecules to target proteins, with the goal of accelerating the drug discovery process. Our model achieved state-of-the-art performance on a benchmark dataset and demonstrated the potential to significantly reduce the time and cost associated with drug development.",
-        "Drug discovery is a complex and time-consuming process that involves the identification of lead compounds, optimization of their chemical properties, and evaluation of their biological activity. Traditional methods for predicting drug-target interactions are often limited by their reliance on experimental data and lack of scalability. Machine learning offers a promising alternative by leveraging large-scale datasets to learn complex patterns and make accurate predictions."
+        "A robust automation tool designed to streamline literature review workflows by batch-fetching BibTeX citations from raw paper titles.",
+        "Users simply upload an Excel file containing paper titles, and the system intelligently searches Google Scholar via SerpApi. To ensure accuracy, it implements cross-validation of titles and falls back on Crossref and arXiv DOI inference, significantly reducing the risk of citing the wrong paper.",
+        "Built with Node.js and featuring a clean web UI, it handles API rate-limits gracefully with built-in retries and outputs a structured .xlsx file containing all the matched BibTeX entries and metadata."
       ],
-      "image": "/images/test_project.jpeg",
       "href": {
-        "Github": "https://www.example.com",
-        "Demo": "https://www.example.com",
-        "File": "/project1.pdf"
-      }
+        "Code": "https://github.com/luythoangduy/BibtexScraping"
+      },
+      "skills": ["Research Tools", "Node.js"]
     },
     {
-      "id": 2,
-      "title": "Machine Learning for Drug Discovery",
+      "id": "2",
+      "title": "CXR-DR: Chest X-ray Diagnosis and Report Generation",
+      "status": "Completed",
       "description": [
-        "Machine learning has revolutionized the field of drug discovery by enabling the rapid identification of novel therapeutic compounds. In this project, we developed a deep learning model to predict the binding affinity of small molecules to target proteins, with the goal of accelerating the drug discovery process. Our model achieved state-of-the-art performance on a benchmark dataset and demonstrated the potential to significantly reduce the time and cost associated with drug development."
+        "A comprehensive deep learning framework designed for automated chest X-ray diagnosis and medical report generation, developed as my capstone thesis.",
+        "The system tackles critical challenges in medical imaging, specifically long-tailed distributions of rare pathologies and domain shifts across different X-ray scanners. It employs specialized ensemble CNNs with attention-guided feature learning to accurately identify subtle abnormalities.",
+        "To ensure cross-dataset robustness, it integrates adversarial scanner/domain debiasing techniques and leverages PubMedCLIP-based input validation. The AI engine is served via a high-performance FastAPI backend and consumed by a modern Next.js web application."
       ],
-      "image": "",
       "href": {
-        "Github": "https://www.example.com",
-        "Showcase": "https://www.example.com"
-      }
+        "Code": "https://github.com/luythoangduy/AIP-DoAn-ABDA-Queener"
+      },
+      "skills": ["Medical Imaging", "Deep Learning", "FastAPI"]
+    },
+    {
+      "id": "3",
+      "title": "LiteratureWikiGraphRAG",
+      "status": "In Progress",
+      "description": [
+        "An innovative LLM-powered Wiki-style GraphRAG system designed specifically for academic literature review.",
+        "Unlike traditional approaches that treat papers as individual nodes, this system builds a sparse, semantic concept graph where nodes represent key methodologies, datasets, metrics, and research gaps. The actual papers serve as supporting evidence attached to these nodes and edges.",
+        "Developed with Python, Streamlit, and the Gemini API, it features an intelligent narrowing workflow that helps researchers distill broad topics down to a highly relevant core set of papers before extracting concepts and generating deeply cited, evidence-backed literature review drafts."
+      ],
+      "href": {
+        "Code": "https://github.com/luythoangduy/LiteratureWikiGraphRAG"
+      },
+      "skills": ["LLM", "GraphRAG", "Python"]
     }
   ]
 }

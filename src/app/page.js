@@ -23,11 +23,11 @@ export default function Home() {
 
             <NameCard/>
 
-            {news.news.length > 0 && <News/>}
+            {personalInfo.self_description_detail.length > 0 && <About/>}
 
             <LinkSection/>
 
-            {personalInfo.self_description_detail.length > 0 && <About/>}
+            {news.news.length > 0 && <News/>}
 
         </Content>
     );

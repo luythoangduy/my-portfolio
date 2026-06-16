@@ -7,6 +7,7 @@ import publications from '../../../data/publications.json';
 import projects from '../../../data/projects.json';
 import research from '../../../data/research.json';
 import experience from "../../../data/experience.json";
+import achievements from "../../../data/achievements.json";
 
 function Header({scrolled}) {
     const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +27,7 @@ function Header({scrolled}) {
                         {(experience.extracurricular.length > 0 || experience.job.length > 0) && (<NavLink title="Experience" href="/experience"/>)}
                         {publications.publications.length > 0 && (<NavLink title="Publications" href="/publications"/>)}
                         {projects.projects.length > 0 && (<NavLink title="Projects" href="/projects"/>)}
+                        {achievements.achievements.length > 0 && (<NavLink title="Achievements" href="/achievements"/>)}
                     </nav>
                     <div className="md:hidden">
                         <button onClick={toggleMenu}>
@@ -44,6 +46,7 @@ function Header({scrolled}) {
                     {(experience.extracurricular.length > 0 || experience.job.length > 0) && (<NavLink title="Experience" href="/experience"/>)}
                     {publications.publications.length > 0 && (<NavLink title="Publications" href="/publications"/>)}
                     {projects.projects.length > 0 && (<NavLink title="Projects" href="/projects"/>)}
+                    {achievements.achievements.length > 0 && (<NavLink title="Achievements" href="/achievements"/>)}
                 </nav>
             )}
         </header>

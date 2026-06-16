@@ -36,7 +36,7 @@ function Header({scrolled}) {
                     </div>
                 </div>
                 <div className="flex items-center ml-auto pr-3 md:pr-0">
-                    <a href={personalInfo.domain} className="font-bold">{personalInfo.name}&apos;s Portfolio</a>
+                    <a href={personalInfo.domain} className="font-bold">{personalInfo.name}</a>
                 </div>
             </div>
             {isOpen && (

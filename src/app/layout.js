@@ -5,7 +5,7 @@ import personalInfo from '../../data/personalInfo.json';
 const inter = Inter({subsets: ["latin"]});
 
 export const metadata = {
-    title: personalInfo.name + "'s Portfolio",
+    title: personalInfo.name,
     description: personalInfo.site_description,
 };
 

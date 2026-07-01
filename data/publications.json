@@ -111,13 +111,13 @@
     },
     {
       "id": "7",
-      "href": "#",
+      "href": "https://github.com/luythoangduy/DR-Net",
       "year": "2026",
-      "image": "/images/dumenet.webp",
+      "image": "/images/drnet-overview.png",
       "abstract": [],
       "keywords": [],
-      "citation": "Tri Nguyen Minh*, Duy Hoang Khuong*, Ngu Huynh Cong Viet. Dual-Memory Based Reconstruction Method for Image Anomaly Detection.",
-      "bold_name": "Duy Hoang Khuong*",
+      "citation": "Duy Hoang Khuong, Nguyen Huu Duy, Huynh Cong Viet Ngu. DR-Net: Mitigating Gradient-Induced Feature Drift in Long-Tailed Chest X-Ray Classification via Momentum Anchoring.",
+      "bold_name": "Duy Hoang Khuong",
       "status": "Under Review"
     }
   ]
